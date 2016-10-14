@@ -65,16 +65,30 @@
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Heading Row -->
+        <!-- Cabecera -->
         <div class="row">
             <div class="col-md-8">
-                <img class="img-responsive img-rounded" src="http://placehold.it/900x350" alt="">
+              <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                  <div class="active item"><img  src="img/cabecera1.jpg" alt="imagencabecera" /></div>
+                  <div class="item"><img  src="img/cabecera2.jpg" alt="imagencabecera" /></div>
+
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+                </div>
             </div>
             <!-- /.col-md-8 -->
             <div class="col-md-4">
-                <h1>Business Name or Tagline</h1>
-                <p>This is a template that is great for small businesses. It doesn't have too much fancy flare to it, but it makes a great use of the standard Bootstrap core components. Feel free to use this template for any project you want!</p>
-                <a class="btn btn-primary btn-lg" href="#">Call to Action!</a>
+                <h1>ULL Car</h1>
+                <p>Te ayudamos a encontrar otros estudiantes universitarios para que puedas compartir los gastos del transporte hacia la universidad.</p>
+                
             </div>
             <!-- /.col-md-4 -->
         </div>
@@ -95,24 +109,28 @@
 
         <!-- Content Row -->
         <div class="row">
-            <div class="col-md-4">
-                <h2>Heading 1</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
-                <a class="btn btn-default" href="#">More Info</a>
+            <!-- /.col-md-3 -->
+            <div class="col-md-3">
+                <h2>¿Qué es ULL Car?</h2>
+                <p>Con ULL Car podrás:
+                  <li>Crear eventos e incribirse a otros ya existentes.
+                  <li>Invitar y compartir con amigos eventos mediante redes sociales.
+                  <li>Al seleccionar un evento del calendario se desplagrará la información sobre éste así como opiniones de otros usuarios.
+                  <li>Ranking con los mejores creadores de eventos, su valoración y los eventos que les han hecho alcanzar su puesto en el ranking. </p>
+
             </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4">
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
                 <h2>Heading 2</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
                 <a class="btn btn-default" href="#">More Info</a>
             </div>
-            <!-- /.col-md-4 -->
-            <div class="col-md-4">
+            <!-- /.col-md-3 -->
+            <div class="col-md-3">
                 <h2>Heading 3</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe rem nisi accusamus error velit animi non ipsa placeat. Recusandae, suscipit, soluta quibusdam accusamus a veniam quaerat eveniet eligendi dolor consectetur.</p>
                 <a class="btn btn-default" href="#">More Info</a>
             </div>
-            <!-- /.col-md-4 -->
         </div>
         <!-- /.row -->
 
@@ -133,6 +151,15 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- Carrusel para cabecera -->
+    <script>
+    $(document).ready(function(){
+        $('.myCarousel').carousel({
+            interval: 3000
+        });
+    });
+    </script>
 
 </body>
 
