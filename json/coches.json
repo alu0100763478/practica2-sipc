@@ -1,7 +1,6 @@
 {
     "usuarios": [
             {
-                "nombre": "coche_1",
                 "nombre_conductor": "Pedro Ramos Herrera",
                 "antiguedad": "2 meses",
 		            "viaje_rutina": ["Los Realejos","Santa Cruz de Tenerife"],
