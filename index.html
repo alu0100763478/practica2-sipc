@@ -29,11 +29,7 @@
 
   <!-- Barra de navegacion -->
     <ul id = "myTab" class = "nav nav-tabs">
-       <li class = "active">
-          <a href = "#home" data-toggle = "tab">
-             Inicio
-          </a>
-       </li>
+       <li><a href = "#home" data-toggle = "tab">Inicio</a></li>
 
        <li><a href = "#registro" data-toggle = "tab">Regístrate</a></li>
 
@@ -75,8 +71,10 @@
        </div>
 
        <div class = "tab-pane fade" id = "usuario">
-          <p>jMeter is an Open Source testing software. It is 100% pure Java 
-             application for load and performance testing.</p>
+          <li ng-repeat= "usuario in usuario">
+                 ¡Bienvenido {{usuario.nombre}} {{usuario.apellido}}, !
+              Te has registrado con el correo: {{usuario.email}}
+          </li>
        </div>
 
     </div>
