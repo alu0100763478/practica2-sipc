@@ -5,7 +5,7 @@ misDatos.controller('ControladordeUsuarios', ['$scope', function($scope) {
 
 
   $scope.registrar = function() {
-    $scope.usuario.push( {email: $scope.usuario.email, nombre: $scope.usuario.nombre, apellido: $scope.usuario.apellido});
+    $scope.usuarios.push( {email: $scope.usuario.email, nombre: $scope.usuario.nombre, apellido: $scope.usuario.apellido});
   };
 
 }]);
