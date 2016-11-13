@@ -1,7 +1,7 @@
 var misDatos = angular.module("datosApp", []);
 
 misDatos.controller('ControladordeUsuarios', ['$scope', function($scope) {
-  $scope.usuario = [{}];
+  $scope.usuario = [];
 
 
   $scope.registrar = function() {
